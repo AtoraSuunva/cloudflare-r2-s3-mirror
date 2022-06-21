@@ -62,7 +62,7 @@ Use `wrangler publish` to deploy your worker
 
 If you want to host the worker on a custom domain, then setup a [custom domain](https://developers.cloudflare.com/workers/platform/routing/custom-domains) on your worker
 
-ie. to host it on `example.com`, set `example.com/*` as a custom domain.
+ie. to host it on `example.com`, set `example.com` as a custom domain.
 
 ## Contributing
 
