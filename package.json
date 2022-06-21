@@ -1,0 +1,26 @@
+{
+  "name": "cloudflare-r2-s3-mirror",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "scripts": {
+    "build": "node build.js",
+    "start": "wrangler dev",
+    "deploy": "wrangler publish",
+    "lint": "eslint --fix src/ && prettier --write src/"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.12.0",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "esbuild": "^0.14.44",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.3",
+    "wrangler": "2.0.12"
+  },
+  "dependencies": {
+    "aws4fetch": "^1.0.13"
+  }
+}

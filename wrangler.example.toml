@@ -1,0 +1,30 @@
+name = "cloudflare-r2-s3-mirror"
+main = "dist/index.mjs"
+compatibility_date = "2022-06-16"
+
+[build]
+  command = "npm run build"
+
+[[r2_buckets]]
+  binding = "FILE_BUCKET"
+  bucket_name = "<bucket name>"
+  # preview_bucket is required if you want to test with `wrangler dev`
+  # preview_bucket_name = "<bucket name>"
+
+
+# Set this if you want to use KV for shortlinks
+# [[kv_namespaces]]
+#   binding = "SHORTLINKS"
+#   id = "<id>"
+#   preview_id = "<preview_id>"
+
+[vars]
+  # URL to your S3 bucket (https://s3.us-east-1.amazonaws.com/my-bucket/)
+  S3_URL = ""
+  # Set this to true to delete files from S3 after mirroring them to R2.
+  # Requires AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY to both be set
+  DELETE_FROM_S3 = false
+  # Required, but secret:
+  #   - AWS_ACCESS_KEY_ID
+  #   - AWS_SECRET_ACCESS_KEY
+  # Use `wrangler secret put <name>` for each

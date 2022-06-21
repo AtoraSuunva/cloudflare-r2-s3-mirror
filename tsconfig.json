@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    /* Projects */
+    "composite": true,
+    "rootDir": "./src",
+    "tsBuildInfoFile": ".tsbuildinfo",
+
+    /* Language and Environment */
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "types": ["@cloudflare/workers-types"],
+
+    /* Modules */
+    "module": "ES2022",
+    "moduleResolution": "node",
+
+    /* Emit */
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    /* Interop Constraints */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Type Checking */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+
+    /* Completeness */
+    "skipLibCheck": true,
+
+    /* Workers */
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true
+  }
+}
